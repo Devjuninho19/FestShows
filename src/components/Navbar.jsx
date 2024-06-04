@@ -35,7 +35,7 @@ const Navbar = () => {
                 to="/register"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
-                Cadastrar
+                Cadastre-se
               </NavLink>
             </li>
           </>
