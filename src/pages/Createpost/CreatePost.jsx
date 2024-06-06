@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthValue } from "../../context/AuthContext";
+import { userInsertDocument } from "./../../hooks/useInsertDocument";
+import styles from "./CreatePost.module.css";
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
@@ -9,12 +11,22 @@ const CreatePost = () => {
 
   const [tags, setTags] = useState([]);
   const [forError, setFormError] = useState("");
+  const { user } = useAuthValue();
+  const { InsertDocument, response } = userInsertDocument("posts");
   const handleSubmit = (e) => {
     e.preventDefault();
-  };
+    setFormError("");
 
+    InsertDocument({
+      title,
+      image,
+      body,
+      tags,
+      uid: user.uid,
+    });
+  };
   return (
-    <div>
+    <div className={styles.create}>
       <h2>Criar Evento</h2>
       <p>Escreva Sobre o Evento</p>
       <form onSubmit={handleSubmit}>

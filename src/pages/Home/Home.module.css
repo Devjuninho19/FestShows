@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  max-width: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.form_input {
+  margin-right: 10px;
+  width: 50%;
+}
+.nooposts {
+  text-align: center;
+}
+
+.nooposts p {
+  margin-bottom: 1.5em;
+}

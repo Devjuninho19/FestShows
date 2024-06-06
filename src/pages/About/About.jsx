@@ -18,13 +18,6 @@ const About = () => {
         para o seu próximo evento. Com apenas alguns cliques, você pode garantir
         seu lugar e começar a contar os minutos até o momento especial.
       </p>
-      <Link
-        to="/posts/create"
-        className="
-      btn"
-      >
-        Criar Evento
-      </Link>
     </div>
   );
 };
