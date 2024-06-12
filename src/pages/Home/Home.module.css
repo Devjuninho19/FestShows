@@ -86,3 +86,13 @@
 .titulo span{
   color: #00a505;
 }
+.especialidades .box {
+  padding: 40px;
+}
+
+.especialidades .box .icon{
+font-size: 50px;
+color: #00a505;
+position: relative;
+top: -318px;
+}

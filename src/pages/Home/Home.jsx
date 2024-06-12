@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 import pessoa from "../../images/pessoa.png"
 import { FaCode } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
-import { FaWordpress } from "react-icons/fa";
+import { FiLock } from "react-icons/fi";
 
 //hooks
 
@@ -42,14 +42,14 @@ const Home = () => {
   <div className={styles.box}>
     <h3>webSite</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero, temporibus, beatae fuga eos et explicabo minima, deleniti laboriosam aliquam consequuntur id? Omnis commodi blanditiis fuga perferendis quaerat esse voluptatem?</p>
-  <FaCode />
+  <FaCode className={styles.icon} />
 
 
   </div>
   <div className={styles.box}>
-    <h3>webSite</h3>
+    <h3>Segurança</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero, temporibus, beatae fuga eos et explicabo minima, deleniti laboriosam aliquam consequuntur id? Omnis commodi blanditiis fuga perferendis quaerat esse voluptatem?</p>
-    <IoCartOutline />
+    <IoCartOutline className={styles.icon} />
 
 
 
@@ -58,7 +58,7 @@ const Home = () => {
   <div className={styles.box}>
     <h3>webSite</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero, temporibus, beatae fuga eos et explicabo minima, deleniti laboriosam aliquam consequuntur id? Omnis commodi blanditiis fuga perferendis quaerat esse voluptatem?</p>
-    <FaWordpress />
+    <FiLock className={styles.icon} />
 
 
 

@@ -15,7 +15,7 @@ import Register from "./pages/Register/Register";
 //importando os componentes
 
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 
 // importando o contexto
 import { AuthProvider } from "./context/AuthContext";
