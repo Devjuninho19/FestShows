@@ -8,7 +8,7 @@ import ActionAreaCard from "../../components/Card/ActionAreaCard";
 const Dashboard = () => {
   const [query, setQuery] = useState("");
   const [posts] = useState([]);
-  const[loading]= useState();
+  const [loading] = useState();
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -26,12 +26,13 @@ const Dashboard = () => {
       </form>
       <div>
         <h2>Posts...</h2>
-        {loading &&<p>Carregando..</p>}
-        {posts && posts.map((post) =><PostDetails key={post.id}  post={post}/>)}
+        {loading && <p>Carregando..</p>}
+        {posts &&
+          posts.map((post) => <PostDetails key={post.id} post={post} />)}
         {posts && posts.length === 0 && (
           <div className={styles.nooposts}>
             <p>Não foram encontrados posts</p>
-            <ActionAreaCard/>
+            <ActionAreaCard />
           </div>
         )}
       </div>

@@ -1,9 +1,11 @@
-import React from 'react'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
+import pessoa from "../../images/pessoa.png";
+import images from "../../images/images.jpg";
 const ActionAreaCard = () => {
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -11,12 +13,12 @@ const ActionAreaCard = () => {
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          image={images}
+          alt="Show do Ano!"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Show do Ano!
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -26,6 +28,6 @@ const ActionAreaCard = () => {
       </CardActionArea>
     </Card>
   );
-}
+};
 
 export default ActionAreaCard;
