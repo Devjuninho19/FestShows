@@ -69,11 +69,11 @@ function App() {
               />
               <Route
                 path="/dashboard"
-                element={user ? <Register /> : <Dashboard to="/login" />}
+                element={!user ? <Register /> : <Dashboard to="/login" />}
               />
             </Routes>
           </div>
-          <Footer />
+  
         </BrowserRouter>
       </AuthProvider>
     </div>

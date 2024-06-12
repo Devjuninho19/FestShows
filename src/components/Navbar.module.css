@@ -8,6 +8,7 @@
 
 .brand {
   font-size: 1.2em;
+  color: rgb(0, 0, 0);
 }
 .brand span {
   font-weight: 900;
@@ -27,6 +28,6 @@
 }
 
 .active {
-  background-color: black;
+  background-color: #00a505;
   color: white;
 }

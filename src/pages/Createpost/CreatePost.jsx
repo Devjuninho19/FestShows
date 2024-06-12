@@ -8,15 +8,15 @@ const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [body, setBody] = useState("");
+const[loading]= useState("");
+const[error]= useState("");
 
   const [tags, setTags] = useState([]);
-  const [forError, setFormError] = useState("");
+  const [formError, setFormError] = useState("");
   const { user } = useAuthValue();
   const { InsertDocument, response } = userInsertDocument("posts");
+  
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormError("");
-
     InsertDocument({
       title,
       image,
@@ -24,6 +24,10 @@ const CreatePost = () => {
       tags,
       uid: user.uid,
     });
+    e.preventDefault();
+    setFormError("");
+
+  
   };
   return (
     <div className={styles.create}>
@@ -48,8 +52,8 @@ const CreatePost = () => {
             name="image"
             required
             placeholder="Insira a imagem que representa o seu evento"
-            onChange={(e) => setTitle(e.target.value)}
-            value={title}
+            onChange={(e) => setImage(e.target.value)}
+            value={image}
           />
         </label>
         <label>
@@ -72,8 +76,13 @@ const CreatePost = () => {
             value={tags}
           />
         </label>
+        {!response.loading && <button className="btn">Cadastrar</button>}
+        {loading && (
+          <button className="btn" disabled>Aguarde...</button>
+        )}
+        {error && <p className="error">{error}</p>}
       </form>
-      <button className="btn">Criar</button>
+    
     </div>
   );
 };
