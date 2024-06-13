@@ -74,6 +74,9 @@
 .especialidades {
   padding: 40px 4%;
 }
+.especialidades .flex {
+  gap: 60px;
+}
 
 .titulo {
   font-size: 38px;
@@ -86,10 +89,21 @@
 }
 .especialidades .box {
   padding: 40px;
-}
+  border-radius: 20px;
 
+  margin-top: 45px;
+  transition: 0.2s;
+}
+.especialidades .box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px black;
+}
 .especialidades .box .icon {
   font-size: 50px;
   color: #00a505;
   position: relative;
+}
+.especialidades .box h3 {
+  font-size: 28px;
+  margin: 15px;
 }

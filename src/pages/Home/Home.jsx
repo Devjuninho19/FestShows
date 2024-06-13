@@ -47,7 +47,7 @@ const Home = () => {
             <div className={styles.box}>
               <FaCode className={styles.icon} />
 
-              <h3>webSite</h3>
+              <h3>Visão</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
                 vero, temporibus, beatae fuga eos et explicabo minima, deleniti
@@ -70,7 +70,7 @@ const Home = () => {
             <div className={styles.box}>
               <FiLock className={styles.icon} />
 
-              <h3>webSite</h3>
+              <h3>Missão</h3>
 
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit

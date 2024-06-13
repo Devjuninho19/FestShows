@@ -26,6 +26,24 @@ const ActionAreaCard = () => {
           </Typography>
         </CardContent>
       </CardActionArea>
+
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image={images}
+          alt="Show do Ano!"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Show do Ano!
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
     </Card>
   );
 };

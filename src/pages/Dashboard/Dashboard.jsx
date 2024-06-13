@@ -33,6 +33,7 @@ const Dashboard = () => {
           <div className={styles.nooposts}>
             <p>Não foram encontrados posts</p>
             <ActionAreaCard />
+            <ActionAreaCard />
           </div>
         )}
       </div>
