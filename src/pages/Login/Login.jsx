@@ -27,36 +27,38 @@ const Login = () => {
   }, [authError]);
   return (
     <div className={styles.login}>
-      <h2>Faça o seu Login</h2>
-      <p>Faça o login para poder utilizar o sistema</p>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <span>E-mail:</span>
-          <input
-            type="email"
-            name="email"
-            required
-            placeholder=" E-mail do usuário"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-        <label>
-          <span>Password:</span>
-          <input
-            type="password"
-            name="password"
-            required
-            placeholder=" Insira sua senha"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
-        <label></label>
-        {!loading && <button className="btn">Entrar</button>}
+      <h2>FAÇA O SEU LOGIN</h2>
+      <div className={styles.right}>
+        <form onSubmit={handleSubmit} className={styles.card}>
+          <div className={styles.textfield}>
+            <label>
+              <span>E-mail:</span>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder=" E-mail do usuário"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </label>
+            <label>
+              <span>Password:</span>
+              <input
+                type="password"
+                name="password"
+                required
+                placeholder=" Insira sua senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </label>
+          </div>
+          {!loading && <button className="btn">Entrar</button>}
 
-        {error && <p className="error">{error}</p>}
-      </form>
+          {error && <p className="error">{error}</p>}
+        </form>
+      </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Register = () => {
   }, [authError]);
   return (
     <div className={styles.register}>
-      <h3>Cadastre-se</h3>
+      <h2>Cadastre-se</h2>
 
       <form onSubmit={handleSubmit}>
         <label>

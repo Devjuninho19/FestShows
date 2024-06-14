@@ -3,8 +3,11 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <h3>Tenha a melhor Experiência!</h3>
-      <p>Mini Blog &copy;2024</p>
+      <div className={styles.line}>
+        <div className={styles.line}>
+          <div className={styles.logo}></div>
+        </div>
+      </div>
     </footer>
   );
 };
