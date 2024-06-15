@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useAuthentication } from "../../hooks/useAuthentication";
+import dinheiro from "../../images/dinheiro.svg";
 import styles from "./Login.module.css";
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -28,6 +29,7 @@ const Login = () => {
   return (
     <div className={styles.login}>
       <h2>FAÇA O SEU LOGIN</h2>
+      <img src={dinheiro} alt="dinheiro" />
       <div className={styles.right}>
         <form onSubmit={handleSubmit} className={styles.card}>
           <div className={styles.textfield}>
