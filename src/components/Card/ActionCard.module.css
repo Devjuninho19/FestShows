@@ -5,6 +5,7 @@
 .card {
   margin: 15px;
   flex-direction: column;
+  padding: 15px;
 }
 
 .btn {

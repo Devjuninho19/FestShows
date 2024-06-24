@@ -10,7 +10,7 @@ import { FiLock } from "react-icons/fi";
 //componentes
 const Home = () => {
   return (
-    <div>
+    <div className={styles.principal}>
       <section>
         <div className="interface">
           <div className="interface">
@@ -25,15 +25,9 @@ const Home = () => {
                   doloribus nobis voluptates. Vitae quas repellat fuga a illum
                   ipsum, nobis nam hic.
                 </p>
-                <div className="btn-contato">
-                  <a>
-                    <button className={styles.btn}>Acesse os Eventos</button>
-                  </a>
-                </div>
+                <div className="btn-contato"></div>
               </div>
-              <div className={styles.img}>
-                <img src={pessoa} className={styles.img} alt="pessoa" />
-              </div>
+              <img src={pessoa} className={styles.img} alt="pessoa" />
             </div>
           </div>
         </div>
