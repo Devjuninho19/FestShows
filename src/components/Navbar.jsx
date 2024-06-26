@@ -55,7 +55,7 @@ const Navbar = () => {
                 to="/dashboard"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
-                Dashboard
+                Comprar
               </NavLink>
             </li>
           </>

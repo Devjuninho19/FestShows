@@ -2,18 +2,12 @@
   margin: 0;
   padding: 0;
 }
-.header {
-  background: black;
-  color: white;
-  font-size: 24px;
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
+
 .main {
-  background: #fff;
   padding: 0 30px 30px;
+  width: 100%; /* Largura relativa */
+  max-width: 3000px; /* Largura máxima */
+  min-width: 400px;
 }
 .pagetitle {
   font-size: 40px;
@@ -74,6 +68,95 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
+.category {
+  color: #666;
+}
+.qty {
+  background: #eee;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0 0;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 30px;
+}
+.qty span {
+  margin: 0 10px;
+}
+
+.qty button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+}
+.qty button:hover {
+  background: #ddd;
+}
+.aside {
+  margin-left: 30px;
+}
+
+.aside .box {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+  color: #222;
+}
+.aside .box header {
+  padding: 15px 20px;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+aside .box .info {
+  padding: 20px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #555;
+}
+.aside .box .info button {
+  color: #28a745;
+  background: transparent;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 13px;
+}
+.aside .box .info footer {
+  padding: 15px 20px;
+  background: #ddd;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .summari {
   flex: 0 0 auto;
 }
@@ -85,4 +168,15 @@
 .btn {
   border: 1px solid black;
   width: 20px;
+}
+.buton {
+  border: 0;
+  padding: 15px 0;
+  color: white;
+  background: #28a745;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
 }

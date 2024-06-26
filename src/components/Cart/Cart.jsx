@@ -33,7 +33,9 @@ const Cart = () => {
                     <td>R$ 120</td>
                     <td>
                       <div className={styles.qty}>
+                        <button>+</button>
                         <span>2</span>
+                        <button>-</button>
                       </div>
                     </td>
                     <td>R$ 240</td>
@@ -52,7 +54,9 @@ const Cart = () => {
                     <td>R$ 120</td>
                     <td>
                       <div className={styles.qty}>
+                        <button>+</button>
                         <span>2</span>
+                        <button>-</button>
                       </div>
                     </td>
                     <td>R$ 240</td>
@@ -61,6 +65,8 @@ const Cart = () => {
                   <tr>
                     <td>
                       <div className={styles.product}>
+                        <img src="https://picsum.photos/100/120" alt="imagem" />
+
                         <div className={styles.info}>
                           <div className={styles.name}>Nome do produto</div>
                           <div className={styles.category}>Categoria</div>
@@ -70,7 +76,9 @@ const Cart = () => {
                     <td>R$ 120</td>
                     <td>
                       <div className={styles.qty}>
+                        <button>+</button>
                         <span>2</span>
+                        <button>-</button>
                       </div>
                     </td>
                     <td>R$ 240</td>
@@ -80,9 +88,26 @@ const Cart = () => {
               </table>
             </section>
           </div>
-          <div>
-            <aside>Resumo das compras</aside>
-          </div>
+          <aside className={styles.aside}>
+            <div className={styles.box}>
+              <header>Resumo da compra</header>
+              <div className={styles.info}>
+                <div>
+                  <span>sub-total</span>
+                  <span>R$ 418</span>
+                </div>
+
+                <div>
+                  <button>Adicionar cupom de desconto</button>
+                </div>
+              </div>
+              <footer>
+                <span>Total</span>
+                <span>R$ 418</span>
+              </footer>
+            </div>
+            <button className={styles.buton}>Finalizar Compra</button>
+          </aside>
         </div>
       </main>
     </div>
