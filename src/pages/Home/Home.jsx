@@ -25,9 +25,10 @@ const Home = () => {
                   doloribus nobis voluptates. Vitae quas repellat fuga a illum
                   ipsum, nobis nam hic.
                 </p>
-                <div className="btn-contato"></div>
               </div>
-              <img src={pessoa} className={styles.img} alt="pessoa" />
+              <div className={styles.img}>
+                <img src={pessoa} className={styles.img} alt="pessoa" />
+              </div>
             </div>
           </div>
         </div>
@@ -38,40 +39,41 @@ const Home = () => {
             NOSSAS <span>VANTAGENS</span>
           </h2>
           <div className={styles.flex}>
-            <div className={styles.box}>
-              <FaCode className={styles.icon} />
+            <div>
+              <div className={styles.box}>
+                <FaCode className={styles.icon} />
+                <h3>Visão</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  vero, temporibus, beatae fuga eos et explicabo minima,
+                  deleniti laboriosam aliquam consequuntur id? Omnis commodi
+                  blanditiis fuga perferendis quaerat esse voluptatem?
+                </p>
+              </div>
+              <div className={styles.box}>
+                <IoCartOutline className={styles.icon} />
 
-              <h3>Visão</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                vero, temporibus, beatae fuga eos et explicabo minima, deleniti
-                laboriosam aliquam consequuntur id? Omnis commodi blanditiis
-                fuga perferendis quaerat esse voluptatem?
-              </p>
-            </div>
-            <div className={styles.box}>
-              <IoCartOutline className={styles.icon} />
+                <h3>Missão</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  vero, temporibus, beatae fuga eos et explicabo minima,
+                  deleniti laboriosam aliquam consequuntur id? Omnis commodi
+                  blanditiis fuga perferendis quaerat esse voluptatem?
+                </p>
+              </div>
 
-              <h3>Missão</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                vero, temporibus, beatae fuga eos et explicabo minima, deleniti
-                laboriosam aliquam consequuntur id? Omnis commodi blanditiis
-                fuga perferendis quaerat esse voluptatem?
-              </p>
-            </div>
+              <div className={styles.box}>
+                <FiLock className={styles.icon} />
 
-            <div className={styles.box}>
-              <FiLock className={styles.icon} />
+                <h3>Segurança</h3>
 
-              <h3>Segurança</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                vero, temporibus, beatae fuga eos et explicabo minima, deleniti
-                laboriosam aliquam consequuntur id? Omnis commodi blanditiis
-                fuga perferendis quaerat esse voluptatem?
-              </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                  vero, temporibus, beatae fuga eos et explicabo minima,
+                  deleniti laboriosam aliquam consequuntur id? Omnis commodi
+                  blanditiis fuga perferendis quaerat esse voluptatem?
+                </p>
+              </div>
             </div>
           </div>
         </div>

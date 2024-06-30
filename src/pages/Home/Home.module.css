@@ -65,7 +65,7 @@
 .img {
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
-  margin-left: 495px;
+  margin-left: 300px;
 }
 @keyframes flutuar {
   0% {
@@ -113,8 +113,55 @@
   margin: 15px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .topo {
     justify-content: center;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .especialidades {
+    box {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .topo {
+    justify-content: center;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .especialidades {
+    box {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .topo {
+    justify-content: center;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .especialidades {
+    box {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
