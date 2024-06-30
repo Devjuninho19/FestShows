@@ -14,7 +14,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 //importando os componentes
 
-import Navbar from "./components/Navbar";
+import Navbar from "../src/components/NavBar/Navbar";
 //import Footer from "./components/Footer";
 
 // importando o contexto
