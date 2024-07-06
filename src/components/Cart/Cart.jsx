@@ -8,7 +8,7 @@ const Cart = () => {
     return Math.floor(Math.random() * (max - min) + min);
   }
 
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState([1]);
   const productObject = {
     name: "produto",
     category: "categoria",
@@ -56,7 +56,7 @@ const Cart = () => {
               </thead>
               <tbody>
                 {product.map((item, index) => (
-                  <TableRow data={item} key={index} item={item} />
+                  <TableRow key={index} item={item} />
                 ))}
                 {product.length === 0 && (
                   <tr>

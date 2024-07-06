@@ -1,5 +1,6 @@
 import React from "react";
 import "../../components/styles.scss";
+import BasicModal from "../Modal/BasicModal";
 const Summary = () => {
   return (
     <>
@@ -26,7 +27,7 @@ const Summary = () => {
           <span>R$ 418</span>
         </footer>
       </div>
-      <button>REALIZAR COMPRA</button>
+      <BasicModal />
     </>
   );
 };

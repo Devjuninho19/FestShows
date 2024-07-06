@@ -7,7 +7,7 @@ const TableRow = () => {
         <div className="product">
           <img src="https://picsum.photos/100/120" alt="" />
           <div className="info">
-            <div className="name">Nome do produto</div>
+            <div className="name">Nome do Produto</div>
             <div className="category">Categoria</div>
           </div>
         </div>
