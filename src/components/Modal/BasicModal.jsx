@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import styles from "./BasicModal.module.css";
@@ -13,9 +13,12 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button className={styles.button} onClick={handleOpen}>
-        Realizar Compra
-      </Button>
+      <div>
+        <button className={styles.button} onClick={handleOpen}>
+          Realizar Compra
+        </button>
+      </div>
+
       <Modal
         open={open}
         onClose={handleClose}
@@ -23,9 +26,6 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box className={styles.info}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Realize o seu Pagamento
-          </Typography>
           <Payment />
         </Box>
       </Modal>

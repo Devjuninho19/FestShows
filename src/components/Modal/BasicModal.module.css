@@ -12,11 +12,26 @@
 
 .info {
   position: absolute;
+  width: 40vh;
+  height: 40vh;
+  margin: 80px 80px;
   top: 50%;
   left: 50%;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px black;
+  padding: 40px;
+  border-radius: 20px;
+
+  margin-top: 45px;
+  transition: 0.2s;
   transform: translate(-50%, -50%);
   width: 400;
 
-  border: 2px solid #000;
   box-shadow: 24px;
+}
+.info {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: aliceblue;
 }
