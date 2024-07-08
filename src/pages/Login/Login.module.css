@@ -103,3 +103,18 @@
   transform: translateY(80px);
   transform: translateX(-30.1rem);
 }
+@media screen and (max-width: 450px) {
+  .card {
+    max-width: 100%;
+    width: 80vw;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .login h2 {
+    font-size: 45px;
+    position: absolute;
+    flex-direction: column;
+    margin: 15vw 15vw;
+  }
+}

@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import styles from "./BasicModal.module.css";
 import Payment from "../QrCode/Payment";

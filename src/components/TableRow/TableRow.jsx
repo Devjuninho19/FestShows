@@ -25,11 +25,6 @@ const TableRow = () => {
         </div>
       </td>
       <td>R$ 240</td>
-      <td>
-        <button className="remove">
-          <i className="bx bx-x"></i>
-        </button>
-      </td>
     </tr>
   );
 };
