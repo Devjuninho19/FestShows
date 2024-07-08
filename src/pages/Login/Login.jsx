@@ -28,7 +28,7 @@ const Login = () => {
   }, [authError]);
   return (
     <div className={styles.login}>
-      <h2>FAÇA O SEU LOGIN .</h2>
+      <h2>FAÇA O SEU LOGIN </h2>
       <img src={dinheiro} alt="dinheiro" />
       <div className={styles.right}>
         <form onSubmit={handleSubmit} className={styles.card}>

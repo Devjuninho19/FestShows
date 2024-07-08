@@ -110,3 +110,26 @@
   transform: translateY(80px);
   transform: translateX(-30.1rem);
 }
+@media screen and (max-width: 450px) {
+  .card {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 300px;
+    height: 600px;
+  }
+  .register h2 {
+    font-size: 2rem;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 10vw 10vw;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 360px) {
+  .register h2 {
+    display: none;
+  }
+}

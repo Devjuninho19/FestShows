@@ -118,3 +118,36 @@
     margin: 15vw 15vw;
   }
 }
+@media screen and (max-width: 1024px) {
+  .card {
+    max-width: 100%;
+    position: absolute;
+    margin-left: 35vw;
+    width: 50vw;
+    height: 35vw;
+  }
+  .login h2 {
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 35vw;
+  }
+  .login img {
+    margin-left: 35vw;
+  }
+}
+@media screen and (min-width: 820px) {
+  .login img {
+    margin-left: 50vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    margin-top: 20vw;
+  }
+  .login img {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50vw;
+  }
+}
