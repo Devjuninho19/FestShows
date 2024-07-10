@@ -17,7 +17,8 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "react/jsx-no-target-blank": "off", // Se você deseja desativar essa regra
+    "react/jsx-no-target-blank": "off",
+    "react/prop-types": "off", // Se você deseja desativar essa regra
     // Adicione outras regras específicas do seu projeto, se necessário
   },
 };

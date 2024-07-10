@@ -98,8 +98,10 @@
 }
 
 .login img {
+  max-width: 100%;
   width: 25%;
   position: absolute;
+  margin-right: 45vw;
   transform: translateY(80px);
   transform: translateX(-30.1rem);
 }
@@ -112,7 +114,7 @@
     align-items: center;
   }
   .login h2 {
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     flex-direction: column;
     margin: 15vw 15vw;
@@ -122,14 +124,15 @@
   .card {
     max-width: 100%;
     position: absolute;
-    margin-left: 35vw;
-    width: 50vw;
-    height: 35vw;
+    text-align: center;
+    justify-content: center;
+
+    width: 70vw;
+    height: 70vw;
   }
   .login h2 {
     position: absolute;
     margin-top: 50vh;
-    margin-left: 35vw;
   }
   .login img {
     margin-left: 35vw;
@@ -149,5 +152,10 @@
     justify-content: center;
     align-items: center;
     margin-left: 50vw;
+  }
+}
+@media screen and (max-width: 380px) {
+  .login h2 {
+    display: none;
   }
 }

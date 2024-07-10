@@ -2,20 +2,20 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthValue } from "../../context/AuthContext";
-import { userInsertDocument } from "./../../hooks/useInsertDocument";
+import { userInsertDocument } from "../../hooks/useInsertDocument.jsx";
 import styles from "./CreatePost.module.css";
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [body, setBody] = useState("");
-const[loading]= useState("");
-const[error]= useState("");
+  const [loading] = useState("");
+  const [error] = useState("");
 
   const [tags, setTags] = useState([]);
   const [formError, setFormError] = useState("");
   const { user } = useAuthValue();
   const { InsertDocument, response } = userInsertDocument("posts");
-  
+
   const handleSubmit = (e) => {
     InsertDocument({
       title,
@@ -26,8 +26,6 @@ const[error]= useState("");
     });
     e.preventDefault();
     setFormError("");
-
-  
   };
   return (
     <div className={styles.create}>
@@ -78,11 +76,12 @@ const[error]= useState("");
         </label>
         {!response.loading && <button className="btn">Cadastrar</button>}
         {loading && (
-          <button className="btn" disabled>Aguarde...</button>
+          <button className="btn" disabled>
+            Aguarde...
+          </button>
         )}
         {error && <p className="error">{error}</p>}
       </form>
-    
     </div>
   );
 };
