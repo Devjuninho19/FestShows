@@ -124,6 +124,18 @@ const Navbar = () => {
           <>
             <li>
               <NavLink
+                to="/UpdatePost"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Atualizar
+              </NavLink>
+            </li>
+          </>
+        )}
+        {user && (
+          <>
+            <li>
+              <NavLink
                 to="/dashboard"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >

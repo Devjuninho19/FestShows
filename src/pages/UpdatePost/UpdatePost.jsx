@@ -1,11 +1,11 @@
 import React from "react";
 import Form from "../../components/Form/Form";
-const CreatePost = () => {
+const UpdatePost = () => {
   return (
     <div>
-      <Form title={"Criar Evento"} textButton={"criar"} />
+      <Form title={"Editar Evento"} textButton={"Editar"} />
     </div>
   );
 };
 
-export default CreatePost;
+export default UpdatePost;

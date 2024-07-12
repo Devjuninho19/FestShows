@@ -1,22 +1,30 @@
 import React from "react";
+import { useForm } from "react-hook-form";
+import { api } from "../../Provider/Provider";
+const Form = ({ title, textButton }) => {
+  const { register, handleSubmit, reset } = useForm();
 
-const Form = () => {
+  function handleCreatePost(data) {
+    api.post("/posts", data);
+    reset();
+  }
+
   return (
-    <form>
-      <h2>Título</h2>
+    <form onSubmit={handleSubmit(handleCreatePost)}>
+      <h2>{title}</h2>
       <div>
-        <input placeholder="Título" />
+        <input placeholder="Título" {...register("title")} />
       </div>
 
       <div>
-        <input placeholder="Descrição" />
+        <input placeholder="Descrição" {...register("description")} />
       </div>
 
       <div>
-        <textarea placeholder="Descrição" />
+        <textarea placeholder="Conteúdo" {...register("content")} />
       </div>
 
-      <button>Botão</button>
+      <button type="submit">{textButton}</button>
     </form>
   );
 };

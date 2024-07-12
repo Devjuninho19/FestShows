@@ -12,6 +12,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import UpdatePost from "./pages/UpdatePost/UpdatePost";
 //importando os componentes
 
 import Navbar from "../src/components/NavBar/Navbar";
@@ -67,6 +68,11 @@ function App() {
                 path="/posts/create"
                 element={user ? <CreatePost /> : <Navigate to="/login" />}
               />
+              <Route
+                path="/UpdatePost"
+                element={user ? <UpdatePost /> : <Navigate to="/UpdatePost" />}
+              />
+
               <Route
                 path="/dashboard"
                 element={!user ? <Register /> : <Dashboard to="/login" />}
