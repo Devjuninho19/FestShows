@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 
 export default function MediaCard({ post }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, width: "40vw", margin: "20px" }}>
       <CardMedia
         sx={{ height: 140 }}
         image="/static/images/cards/contemplative-reptile.jpg"
@@ -20,7 +20,11 @@ export default function MediaCard({ post }) {
       </CardContent>
       <CardActions>
         <Button size="small">Detalhes</Button>
-        <Button size="small">Comprar</Button>
+        <Button size="small">Editar</Button>
+
+        <Button variant="outlined" size="small" color="success">
+          Comprar
+        </Button>
       </CardActions>
     </Card>
   );
